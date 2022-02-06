@@ -1,0 +1,17 @@
+
+Get one string from user
+identify the middle character of the string
+
+x=input("enter the string:")
+print(x)
+y=len(x)
+print("enter the lengthof the string:",y)
+z=int(len(x)//2)
+print("enter the lengthof the string:",z)
+print(x[z])
+##output##
+enter the string:compute
+compute
+enter the lengthof the string: 7
+enter the lengthof the string: 3
+p
