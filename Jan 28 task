@@ -1,0 +1,63 @@
+For below programs collect input from user, pi is constant value 3.14 (print output in formatted way)
+
+1.write a program to calculate perimeter of the circle with radius 10.2
+
+## output ##
+radius=10.2
+perimeter=2*3.14*10.2
+print(perimeter)
+64.056
+print("the perimeter of circule is:" ,perimeter)
+the perimeter of circule is: 64.056
+print("the perimeter of circule is:{0}" .format(perimeter))
+the perimeter of circule is:64.056
+
+
+
+
+
+2.write a program to calculate area of circle with radius (float) (collect using input function)
+
+## output ##
+radius=float(input("enter the radius of circule:"))
+enter the radius of circule:40.56
+perimeter=2*3.14*40.56
+print(perimeter)
+254.71680000000003
+print("the perimeter of circule is: " perimeter)
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+print("the perimeter of circule is: " ,perimeter)
+the perimeter of circule is:  254.71680000000003
+print("the perimeter of circule is:{0}".format(perimeter))
+the perimeter of circule is:254.71
+
+
+3.write a program to calculate perimeter of the cricle with radius (float) (collect it through input function)
+
+## output ##
+radius=float(input("enter the radius of circule:"))
+enter the radius of circule:40.56
+perimeter=2*3.14*40.56
+print(perimeter)
+254.71680000000003
+print("the perimeter of circule is: " ,perimeter)
+the perimeter of circule is:  254.71680000000003
+print("the perimeter of circule is:{0}".format(perimeter))
+the perimeter of circule is:254.71680000000003
+
+
+4.Collect radius and height from user,
+calculate Area of cone (area of cone = 0.33 * pi * r * r * h) (int)
+
+## output ##
+radius=float(input("enter the radius of cone:"))
+enter the radius of cone:23.67
+height=float(input("enter the height of cone:"))
+enter the height of cone:45.60
+area=0.33*23.67*23.67*45.60
+print(area)
+8430.9264072
+print("the area of cone is:{0}".format(area))
+the area of cone is:8430.9264072
+print("the area of cone is: " ,area)
+the area of cone is:  8430.9264072
