@@ -1,0 +1,53 @@
+Task 1 : #create two empty list
+li1=[]
+print(li1)
+print(type(li1))
+li2=list()
+print(li2)
+print(type(li2))
+##output##
+[]
+<class 'list'>
+[]
+<class 'list'>
+
+Task 2 : #Concatenate with [5,6,7,8]
+a=[5,6,7,8]
+b=[5,6,7,8]
+c=a+b
+print(c)
+##output
+[5, 6, 7, 8, 5, 6, 7, 8]
+
+Task 3 : #add 8,9,1,5,6,7,8,1 elements to that list
+li1=[8,9,1,5,6,7,8,1]
+li1.append(30)
+print(li1)
+##output##
+[8, 9, 1, 5, 6, 7, 8, 1, 30]
+
+Task 4 :#find sum (List) + min + Max
+li1=[1,2,3,4,5]
+print(sum(li1))
+print(min(li1))
+print(max(li1))
+print(len(li1)
+##output##
+15
+1
+5
+5
+
+Task 5 : #find the mean of the list
+li1=[1+2+3+4+5]
+print(sum(li1))
+print(len(li1))
+mean=sum(li1)/len(li1)
+print(mean)
+##Output##
+15
+1
+15.0
+
+
+
