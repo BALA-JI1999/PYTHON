@@ -1,4 +1,4 @@
-
+Task 1
 Get one string from user
 identify the middle character of the string
 
@@ -7,7 +7,7 @@ print(x)
 y=len(x)
 print("enter the lengthof the string:",y)
 z=int(len(x)//2)
-print("enter the lengthof the string:",z)
+print("enter the length of the string:",z)
 print(x[z])
 ##output##
 enter the string:compute
@@ -15,3 +15,37 @@ compute
 enter the lengthof the string: 7
 enter the lengthof the string: 3
 p
+enter the string:balaji
+balaji
+enter the lengthof the string: 6
+enter the length of the string: 3
+a
+
+Task 2
+a = "***python***"
+print(a.strip("*"))
+print(a.lstrip())
+print(a.rstrip())
+##output##
+python
+***python***
+***python***
+
+b = **python********
+print(b.strip("*"))
+print(b.lstrip())
+print(b.rstrip())
+##output##
+python
+**python********
+**python********
+
+c = "********java*******"
+print(b.strip("*"))
+print(b.lstrip("*"))
+print(b.rstrip("*"))
+##output##
+java
+java*******
+********java
+
