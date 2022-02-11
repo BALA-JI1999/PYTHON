@@ -12,46 +12,13 @@ The middle character of the string is  a
 
 
 Task 2
-a = "***python***"
-print(a.strip("*"))
-print(a.lstrip())
-print(a.rstrip())
+string1 = "**python********"
+string = "********java*******"
+print(string1.strip("*").lstrip("*").rstrip("*"))
+print(string.strip("*").lstrip("*").rstrip("*"))
 ##output##
 python
-***python***
-***python***
-
-b = **python********
-print(b.strip("*"))
-print(b.lstrip())
-print(b.rstrip())
-##output##
-python
-**python********
-**python********
-
-c = "********java*******"
-print(b.strip("*"))
-print(b.lstrip("*"))
-print(b.rstrip("*"))
-##output##
 java
-java*******
-********java
-
-Task3: (name<space>float)
-
-collect three strings from user  name<space>float
-
-string1: "ravi 10.30"  
-string2: "meghala 12.19"
-string3: "Gokul 20.20"
-split + indexing
-
-10.30 + 12.19 + 20.20 ===> output ===> add it 42.69
-##output##
-Enter a string: executer
-The middle character of the string is  u
 
 #Task 3:
 #collect three strings from user  name<space>float
