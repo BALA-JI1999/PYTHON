@@ -40,6 +40,12 @@ print(set2.issubset(set1))
 False
 
 #check whether both have common elements are no ?
+set1={7,8,9,1,2,3,4,5,0}
+set2={4,5,6,0}
+set3=set1.intersection(set2)
+print(set3)
+##output##
+{0, 4, 5}
 
 #remove 8 from set 1 and set 2 ==> find the inferences
 set1={7,8,9,1,2,3,4,5,0}
