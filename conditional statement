@@ -1,0 +1,31 @@
+Task 1
+#collect three marks from user
+#calculate mark1 + mark2 + mark3 / 100
+
+if calculate > 90 ===> Grade A
+if calculate > 75 ==> Grade B
+calculate > 50  ==> grade C
+Other wise ===> Grade D
+
+physis_marks=int(input("enter the marks scored  in physis:"))
+chemistry_marks=int(input("enter the marks scored in chemistry:"))
+maths_marks=int(input("enter the marks scored in maths:"))
+
+percentage=(physis_marks+chemistry_marks+maths_marks)/3
+print("percentage of mark is:",percentage)
+if percentage>90:
+    print("Grade A")
+elif percentage>75:
+    print("Grade B")
+elif percentage>50:
+    print("Grade C")
+else:
+    print("Grade D")
+
+##output##
+enter the marks scored  in physis:90
+enter the marks scored in chemistry:75
+enter the marks scored in maths:50
+percentage of mark is: 71.66666666666667
+Grade C
+
