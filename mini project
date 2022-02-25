@@ -1,0 +1,88 @@
+import random
+
+games = int(input("enter the games:"))
+
+Li1 = ["rock","paper","scissor"]
+
+tie_count=0
+player_score=0
+computer_score=0
+
+for i in range(games):
+    player = input("Enter the values of rock paper scissor:::")
+    computer = random.choice(Li1)
+
+    if player == computer:
+        print("game is tie")
+        tie_count=tie_count+1
+    elif player == "rock" and computer == "scissor":
+        print("player won the game")
+        player_score=player_score+1
+    elif player == "scissor" and computer == "rock":
+        print("computer won the game")
+        computer_score=computer_score+1
+    elif player == "paper" and  computer == "scissor":
+        print("player won the game")
+        player_score=player_score+1
+    elif player == "scissor" and  computer == "paper":
+        print("computer won the game")
+        computer_score=computer_score+1
+    elif player == "rock" and computer == "paper":
+        print("player won the game")
+        player_score=player_score+1
+    elif player == "paper" and computer == "rock":
+        print("computer won the game")
+        computer_score=computer_score+1
+    else:
+        print("player given input invalid")
+
+print("\nTotal No of Games::",games)
+print("computer points::",computer_score)
+print("player points::",player_score)
+print("Total tie points::",tie_count)
+
+if player_score > computer_score:
+    print("\nplayer won the game!! congrats!!!")
+elif player_score< computer_score:
+    print("\ncomputer won the game!! congrats!!!")
+elif player_score == computer_score:
+    print("\nplayer & computer not won the game!! congrats!!!")
+elif player_score == computer_score (player_score>0 & computer_score>0):
+    print("\nplayer & computer won the game!! congrats!!1 ")
+
+================= RESTART: C:/Users/vijayakumar/mini project.py ================
+enter the games:3
+Enter the values of rock paper scissor:::rock
+player won the game
+Enter the values of rock paper scissor:::paper
+player won the game
+Enter the values of rock paper scissor:::scissor
+computer won the game
+
+Total No of Games:: 3
+computer points:: 1
+player points:: 2
+Total tie points:: 0
+
+player won the game!! congrats!!!
+
+================= RESTART: C:/Users/vijayakumar/mini project.py ================
+enter the games:5
+Enter the values of rock paper scissor:::rock
+game is tie
+Enter the values of rock paper scissor:::paper
+computer won the game
+Enter the values of rock paper scissor:::scissor
+computer won the game
+Enter the values of rock paper scissor:::paper
+computer won the game
+Enter the values of rock paper scissor:::rock
+player won the game
+
+Total No of Games:: 5
+computer points:: 3
+player points:: 1
+Total tie points:: 1
+
+computer won the game!! congrats!!!
+
