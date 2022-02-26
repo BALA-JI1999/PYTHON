@@ -1,0 +1,48 @@
+Project1: Datastructure calculator (List/tuple/set/dictionary/loops)
+
+print("welcome to the data structure!!!")
+
+user1_select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary!!"))
+
+if user1_select==1:
+   print("you are select List data structure!!")
+   li1=[]
+
+   a=int(input("enter the elements you want:"))
+
+   for i in range(0,a):
+       element = int(input())
+       li1.append(element)
+   print(li1)
+    
+   print("1.append","\n2.extend","\n3.pop","\n4.remove","\n5.insert","\n6.concatenation","\n7.remove","\n8.sum/min/max","\n9.update","\n10.count","\n11.len","\n12.find","\n13.mean")
+
+   user_choose=int(input("user select any one perations in List:"))
+
+   if user_choose==1:
+       append_elements=int(input("enter the elements:"))
+       li1.append(append_elements)
+       print(li1)
+   elif user_choose==2:
+       extend_elements=int(input("enter the elements:"))
+       li1.extend(extend_elements)
+       print(li1)
+   elif user_choose==3:
+       pop_elements=int(input("enter the elements:"))
+       li1.pop(pop_elements)
+       print(li1)
+   elif user_choose==4:
+       remove_elements=int(input("enter the elements:"))
+       li1.remove(remove_elements)
+       print(li1)
+elif user1_select==2:
+    print("you are select Tuple datastructure!!")
+
+elif user1_select==3:
+    print("you are select Set datastructure!!")
+
+elif user1_select==4:
+    print("you are select Dictionary datastructure!!")
+
+else:
+    print("invalid data structure!!")
