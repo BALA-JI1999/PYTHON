@@ -1,7 +1,7 @@
 Project1: Datastructure calculator (List/tuple/set/dictionary/loops)
 
 
-   _select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary:"))
+user1_select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary:"))
 
 if user1_select==1:
    print("you are select List data structure!!")
@@ -41,3 +41,42 @@ if user1_select==1:
            break
         
          
+         
+     user1_select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary:"))
+
+if user1_select==3:
+   print("you are select set data structure!!")
+   set1=set()
+
+   a=int(input("enter the elements you want:"))
+
+   for i in range(0,a):
+       element = int(input())
+       set1.add(element)
+   print(set1)
+   while True:
+       print("1.add","\n2.update","\n3.remove","\n4.discard","\n5.sum/min/max","\n6.pop","\n6.exit")
+
+       user_choose=int(input("user select any one operations in set:"))
+
+       if user_choose==1:
+           add_elements=int(input("enter the elements:"))
+           set1.append(add_elements)
+           print(set1)
+   
+       elif user_choose==6:
+           pop_elements=int(input("enter the elements:"))
+           set1.pop(pop_elements)
+           print(set1)
+           
+       elif user_choose==3:
+           remove_elements=int(input("enter the elements:"))
+           set1.remove(remove_elements)
+           print(set1)
+      
+       elif user_choose==4:
+           discard_elements=int(input("enter the elements:"))
+           set1.discard(discard_elements)
+           print(set1)
+       elif user_choose==10:
+           break    
