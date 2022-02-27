@@ -1,6 +1,7 @@
 Project1: Datastructure calculator (List/tuple/set/dictionary/loops)
 
-user1_select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary:"))
+
+   _select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary:"))
 
 if user1_select==1:
    print("you are select List data structure!!")
@@ -12,39 +13,31 @@ if user1_select==1:
        element = int(input())
        li1.append(element)
    print(li1)
-    
-   print("1.append","\n2.pop","\n3.remove","\n4.concatenation","\n5.insert","\n8.sum/min/max","\n9.update","\n10.count","\n11.len","\n12.find","\n13.mean")
+   while True:
+       print("1.append","\n2.pop","\n3.remove","\n4.count","\n5.sum/min/max","\n6.update","\n7.sort","\n8.len","\n9.find","\n10.mean","\n,11.concatenation","\n12.extend","\n13.length","\n14.del","\n15.reverse","\n16.exit")
 
-   user_choose=int(input("user select any one perations in List:"))
+       user_choose=int(input("user select any one operations in List:"))
 
-   if user_choose==1:
-       append_elements=int(input("enter the elements:"))
-       li1.append(append_elements)
-       print(li1)
+       if user_choose==1:
+           append_elements=int(input("enter the elements:"))
+           li1.append(append_elements)
+           print(li1)
    
-   elif user_choose==2:
-       pop_elements=int(input("enter the elements:"))
-       li1.pop(pop_elements)
-       print(li1)
-       
-   elif user_choose==3:
-       remove_elements=int(input("enter the elements:"))
-       li1.remove(remove_elements)
-       print(li1)
+       elif user_choose==2:
+           pop_elements=int(input("enter the elements:"))
+           li1.pop(pop_elements)
+           print(li1)
+           
+       elif user_choose==3:
+           remove_elements=int(input("enter the elements:"))
+           li1.remove(remove_elements)
+           print(li1)
       
-   elif user_choose==4:
-       concatenation_elements=int(input("enter the elements:"))
-       li1.remove(concatenation_elements)
-       print(li1)
+       elif user_choose==4:
+          count_elements=int(input("enter the elements:"))
+           li1.insert(count_elements)
+           print(li1)
+       elif user_choose==10:
+           break
+        
          
-elif user1_select==2:
-    print("you are select Tuple datastructure!!")
-
-elif user1_select==3:
-    print("you are select Set datastructure!!")
-
-elif user1_select==4:
-    print("you are select Dictionary datastructure!!")
-
-else:
-    print("invalid data structure!!")
