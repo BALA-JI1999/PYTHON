@@ -1,8 +1,6 @@
 Project1: Datastructure calculator (List/tuple/set/dictionary/loops)
 
-print("welcome to the data structure!!!")
-
-user1_select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary!!"))
+user1_select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary:"))
 
 if user1_select==1:
    print("you are select List data structure!!")
