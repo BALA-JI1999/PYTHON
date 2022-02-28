@@ -17,18 +17,8 @@ my_list=[10,23,45,56]
 my_list[0],my_list[-1]=my_list[-1],my_list[0]
 print(my_list)
 
-#approach:3 #using tuple
-
-my_list=[10,23,45,56]
-get=(my_list[0],my_list[-1])
-my_list[0],my_list[-1]=get
-print(my_list)
-
 OUTPUT
 [56, 23, 45, 10]
-[56, 23, 45, 10]
-[10, 23, 45, 56]
-
 
 2. Python program to swap two elements in a list
 
@@ -52,26 +42,7 @@ before swap: 100
 after swap: 100
 after swap: 23
 
-
 #approach:2
-
-a=10
-b=20
-print("before swap:",a)
-print("before swap:",b)
-temp=a
-a=b
-b=temp
-print("after swap:",a)
-print("after swap:",b)
-OUTPUT
-before swap: 10
-before swap: 20
-after swap: 20
-after swap: 10
-
-
-#approach:3
 
 a=int(input("enter the value:"))
 b=int(input("enter the value:"))
@@ -90,7 +61,8 @@ after swap: 23
 after swap: 11
 
 
-3## list=[1,2,3,4,5]
+3## find reverse,sum,max,min in list 
+list=[1,2,3,4,5]
 print(list[::-1])#REVERSE
 print(sum(list))
 print(min(list))
@@ -122,7 +94,17 @@ OUTPUT
 first largest number: 200
 second largest number: 99
 
-6.Python program to print even and odd numbers in a list
+6.find smallest number in list
+list = [10, 36, 200, 45, 99]
+list.sort()
+print("first smallest number:",list[:1])
+print("second smallest number:",list[:2])
+
+OUTPUT
+first smallest number: [10]
+second smallest number: [10, 36]
+
+7.Python program to print even and odd numbers in a list
 list = [10, 36, 11, 45, 99]
 a=[]
 b=[]
@@ -136,4 +118,99 @@ print("odd nuber list:",b)
 OUTPUT
 even number list: [10, 36]
 odd nuber list: [11, 45, 99]
+
+8.Maximum and minimum of two numbers in Python
+a = 4
+b = 5
+maximum = max(a, b)
+print(maximum)
+minimum = min(a, b)
+print(minimum)
+OUTPUT
+5
+4
+
+9.program to find the length of list
+n = len([10, 20, 30])
+print("The length of list is: ", n)
+OUTPUT
+4
+
+10.Different ways to clear a list in Python
+list=[1,2,3,4,5]#clear method
+list.clear()
+print(list)
+
+list=[1,2,3,4,5]#del method
+del list[0:]
+print(list)
+
+OUTPUT
+[]
+[]
+
+11.Python program to print all even numbers in a range
+a = int(input("Enter the start of range: "))
+b = int(input("Enter the end of range: "))
+for i in range(a,b):
+    if i%2==0:
+       print(i , end=" ")
+
+OUTPUT
+Enter the start of range: 2
+Enter the end of range: 8
+2 4 6 
+
+12.Python program to print all odd numbers in a range
+a = int(input("Enter the start of range: "))
+b = int(input("Enter the end of range: "))
+for i in range(a,b):
+    if i%2!=0:
+       print(i , end=" ")
+ 
+OUTPUT      
+Enter the start of range: 2
+Enter the end of range: 8
+3 5 7 
+
+13.Python program to count Even and Odd numbers in a List
+list = [10, 21, 4, 45, 66, 93, 1]
+even_count=0
+odd_count=0
+for i in list:
+    if i%2==0:
+        even_count=even_count+1
+    else:
+        odd_count=odd_count+1
+print("even number in list:",even_count)
+print("odd number in list:",odd_count)
+
+OUTPUT
+even number in list: 3
+odd number in list: 4
+
+14.Python program to print positive numbers in list
+list = [10, -21, 4, -45, 66, 93, -1]
+
+for i in list:
+    if i>0:
+        print(i, end=" ")
+
+OUTPUT
+10 4 66 93 
+
+15.Python program to print negative numbers in list
+
+list = [10, -21, 4, -45, 66, 93, -1]
+for i in list:
+    if i<0:
+        print(i, end=" ")
+OUTPUT
+-21,-45,-1
+
+
+
+
+
+
 
