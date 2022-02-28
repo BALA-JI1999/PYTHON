@@ -1,5 +1,5 @@
 Project1: Datastructure calculator (List/tuple/set/dictionary/loops)
-
+LIST DATA STRUCTURE
 
 user1_select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary:"))
 
@@ -24,28 +24,29 @@ if user1_select==1:
            print(li1)
    
        elif user_choose==2:
-           pop_elements=int(input("enter the elements:"))
-           li1.pop(pop_elements)
-           print(li1)
+            pop_elements=int(input("enter the elements:"))
+            li1.pop(pop_elements)
+            print(li1)
            
-       elif user_choose==3:
-           remove_elements=int(input("enter the elements:"))
-           li1.remove(remove_elements)
-           print(li1)
+       elif user_choose==8:
+            print(len(li1))
       
-       elif user_choose==4:
-          count_elements=int(input("enter the elements:"))
-           li1.insert(count_elements)
-           print(li1)
-       elif user_choose==10:
+       elif user_choose==5:
+            print(sum(li1))
+            print(li1)
+            print(max(li1))
+            print(li1)
+            print(min(li1))
+            print(li1)
+           
+      elif user_choose==16:
            break
-        
-         
-         
-     user1_select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary:"))
+
+SET DATA STRUCTURE
+user1_select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary:"))
 
 if user1_select==3:
-   print("you are select set data structure!!")
+   print("you are select Set data structure!!")
    set1=set()
 
    a=int(input("enter the elements you want:"))
@@ -55,28 +56,34 @@ if user1_select==3:
        set1.add(element)
    print(set1)
    while True:
-       print("1.add","\n2.update","\n3.remove","\n4.discard","\n5.sum/min/max","\n6.pop","\n6.exit")
+       print("1.add","\n2.pop","\n3.remove","\n4.count","\n5.sum/min/max","\n6.update","\n7.sort","\n8.len","\n9.find","\n10.mean","\n,11.concatenation","\n12.extend","\n13.length","\n14.del","\n15.reverse","\n16.exit")
 
-       user_choose=int(input("user select any one operations in set:"))
+       user_choose=int(input("user select any one operations in Set:"))
 
        if user_choose==1:
            add_elements=int(input("enter the elements:"))
-           set1.append(add_elements)
+           set1.add(add_elements)
            print(set1)
    
-       elif user_choose==6:
-           pop_elements=int(input("enter the elements:"))
-           set1.pop(pop_elements)
-           print(set1)
+       elif user_choose==2:
+            pop_elements=int(input("enter the elements:"))
+            set1.pop()
+            print(set1)
+            
+       elif user_choose==5:
+            print(sum(set1))
+            print(set1)
+            print(max(set1))
+            print(set1)
+            print(min(set1))
+            print(set1)
            
-       elif user_choose==3:
-           remove_elements=int(input("enter the elements:"))
-           set1.remove(remove_elements)
-           print(set1)
-      
-       elif user_choose==4:
-           discard_elements=int(input("enter the elements:"))
-           set1.discard(discard_elements)
-           print(set1)
-       elif user_choose==10:
-           break    
+          
+       elif user_choose==16:
+           break
+
+
+        
+         
+         
+   
