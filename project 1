@@ -42,11 +42,21 @@ if user1_select==1:
       elif user_choose==16:
            break
 
-##SET DATA STRUCTURE
+##SET DATA STRUCTURe
 
-elif user_select==3
+user1_select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary:"))
 
-set1=set_create()
+if user1_select==3:
+   print("you are select Set data structure!!")
+   set1=set()
+
+   a=int(input("enter the elements you want:"))
+
+   for i in range(0,a):
+       element = int(input())
+       set1.add(element)
+   print(set1)
+
 
    while True:
        print("1.add","\n2.pop","\n3.sum/min/max,"\n4.update","\n5.len","\n6.count","\n.7union""\n8.exit")
@@ -74,54 +84,9 @@ set1=set_create()
       elif user_choose==8:
            break
 
-##DICT DATA STRUCTURE
 
- elif user_select == 4:
+
  
-        print("You have selected the Dictionary data structure and welcome to the Dictionary!!")
-
-        dict1=dict_create()
       
-        while True:
-
-            print("1.add","\n2.Pop","\n3.Update","\n4.Max","\n5.Min","\n6.Exit")
-
-            dict_operation=int(input("Please select any of the above operations to peform further Dictionary process::" ))
-            
-            if dict_operation == 1:
-                print("You have selected the add operation in Dict::Current Dict",dict1)
-                dict1add=dict_add()
-                print("After add operation in the elements::Current Dict is::",dict1add)
-                
-            elif dict_operation == 2:
-                print("You have selected the Pop operation in Dict::Current Dict",dict1)
-                dict1pop=dict_pop()
-                print("After poping element in the Dict::",dict1pop)
-                
-            elif dict_operation == 3:
-                print("You have selected the Update operation in Dict::Current Dict",dict1)
-                dict1update=dict_update()
-                print("After poping element in the Dict::",dict1update)
-                
-            elif dict_operation == 4:
-                print("You have selected the Max operation in Dict::Current Dict",dict1)
-                dict1max=dict_max()
-                print("After poping element in the Dict::",dict1max)
-                
-            elif dict_operation == 5:
-                print("You have selected the Min operation in Dict::Current Dict",dict1)
-                dict1min=dict_min()
-                print("After poping element in the Dict::",dict1min)
-                
-            elif dict_operation == 6:                
-                break
-            else:
-                print("You have selected Invalid Operation in Dictionary!!")
-                
-    elif user_select == 5:
-        break
-
-        
-         
          
    
