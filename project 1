@@ -56,7 +56,7 @@ if user1_select==3:
        set1.add(element)
    print(set1)
    while True:
-       print("1.add","\n2.pop","\n3.remove","\n4.count","\n5.sum/min/max","\n6.update","\n7.sort","\n8.len","\n9.find","\n10.mean","\n,11.concatenation","\n12.extend","\n13.length","\n14.del","\n15.reverse","\n16.exit")
+       print("1.add","\n2.pop","\n3.sum/min/max,"\n4.update","\n5.len","\n6.exit")
 
        user_choose=int(input("user select any one operations in Set:"))
 
@@ -70,7 +70,7 @@ if user1_select==3:
             set1.pop()
             print(set1)
             
-       elif user_choose==5:
+       elif user_choose==4:
             print(sum(set1))
             print(set1)
             print(max(set1))
@@ -79,7 +79,7 @@ if user1_select==3:
             print(set1)
            
           
-       elif user_choose==16:
+       elif user_choose==6:
            break
 
 
