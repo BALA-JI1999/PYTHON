@@ -1,4 +1,4 @@
-Project1: Datastructure calculator (List/tuple/set/dictionary/loops)
+###Project1: Datastructure calculator (List/tuple/set/dictionary/loops)
 ##LIST DATA STRUCTURE
 
 user1_select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary:"))
@@ -41,8 +41,12 @@ if user1_select==1:
            
       elif user_choose==16:
            break
+          
+      else:
+          print("invalid input")
+          
 
-##SET DATA STRUCTURe
+##SET DATA STRUCTURE
 
 user1_select=int(input("select one data structure:: 1.List 2.Tuple 3.Set 4.Dictionary:"))
 
@@ -73,12 +77,16 @@ if user1_select==3:
             set1.pop()
             print(set1)
             
-       elif user_choose==4:
+       elif user_choose==3:
             print(sum(set1))
             print(set1)
             print(max(set1))
             print(set1)
             print(min(set1))
+            print(set1)
+        
+       elif user_choose==4:
+            set1=set_update(set1)
             print(set1)
            
       elif user_choose==8:
